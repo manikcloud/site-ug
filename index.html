@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Mississauga UG – Kickoff Meetup 2025</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts - Roboto as Amazon Ember substitute -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom AWS Console Theme CSS -->
+    <link rel="stylesheet" href="css/aws-console.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="AWS User Group Mississauga - Community Dashboard for Cloud Builders">
+    <meta name="keywords" content="AWS, Cloud Computing, Mississauga, User Group, Community">
+</head>
+<body class="aws-console-body">
+    
+    <!-- AWS Console Header -->
+    <header class="aws-header">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="aws-logo-section">
+                        <img src="assets/aws-icons/organizations.svg" alt="AWS User Group" class="aws-icon me-2">
+                        <span class="aws-service-name">AWS User Group</span>
+                        <span class="aws-region">Mississauga 🇨🇦</span>
+                    </div>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="aws-header-actions">
+                        <a href="https://www.meetup.com/mississauga-linux-meetup-group/" target="_blank" 
+                           class="btn aws-btn-primary">
+                            <img src="assets/aws-icons/iam.svg" alt="Join" class="btn-icon me-2">Join Community
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- AWS Console Navigation -->
+    <nav class="aws-nav">
+        <div class="container-fluid">
+            <ul class="aws-nav-tabs">
+                <li class="aws-nav-item">
+                    <a href="#overview" class="aws-nav-link active" data-tab="overview">
+                        <img src="assets/aws-icons/cloudformation.svg" alt="Overview" class="aws-nav-icon me-2">Overview
+                    </a>
+                </li>
+                <li class="aws-nav-item">
+                    <a href="#events" class="aws-nav-link" data-tab="events">
+                        <img src="assets/aws-icons/eventbridge.svg" alt="Events" class="aws-nav-icon me-2">Events
+                    </a>
+                </li>
+                <li class="aws-nav-item">
+                    <a href="#community" class="aws-nav-link" data-tab="community">
+                        <img src="assets/aws-icons/iam.svg" alt="Community" class="aws-nav-icon me-2">Community
+                    </a>
+                </li>
+                <li class="aws-nav-item">
+                    <a href="#resources" class="aws-nav-link" data-tab="resources">
+                        <img src="assets/aws-icons/s3.svg" alt="Resources" class="aws-nav-icon me-2">Resources
+                    </a>
+                </li>
+                <li class="aws-nav-item">
+                    <a href="#contact" class="aws-nav-link" data-tab="contact">
+                        <img src="assets/aws-icons/ses.svg" alt="Contact" class="aws-nav-icon me-2">Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="aws-main-content">
+        <div class="container-fluid">
+            
+            <!-- Overview Tab -->
+            <div id="overview" class="aws-tab-content active">
+                <div class="aws-page-header">
+                    <h1 class="aws-page-title">AWS User Group Mississauga</h1>
+                    <p class="aws-page-subtitle">Where DevOps, AI, Security & Telecom Professionals Connect</p>
+                </div>
+
+                <!-- Hero Section - AWS Console Style -->
+                <div class="aws-hero-section">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="aws-card">
+                                <div class="aws-card-header">
+                                    <h2 class="aws-card-title">
+                                        <img src="assets/aws-icons/sagemaker.svg" alt="AI Innovation" class="section-icon me-2">
+                                        Join the AI & Cloud Innovation Revolution
+                                    </h2>
+                                </div>
+                                <div class="aws-card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="aws-info-group">
+                                                <label class="aws-label">Next Meetup</label>
+                                                <div class="aws-value">July 31, 2025</div>
+                                            </div>
+                                            <div class="aws-info-group">
+                                                <label class="aws-label">Time</label>
+                                                <div class="aws-value">4:00 PM – 7:00 PM EST</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="aws-info-group">
+                                                <label class="aws-label">Focus Areas</label>
+                                                <div class="aws-value">
+                                                    AI Architecture • DevOps Automation<br>
+                                                    Cloud Security • Telecom Solutions
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="aws-actions mt-4">
+                                        <a href="https://www.meetup.com/mississauga-linux-meetup-group/" target="_blank" 
+                                           class="btn aws-btn-primary me-3">
+                                            <img src="assets/aws-icons/iam.svg" alt="Join" class="btn-icon me-2">Join Our Community
+                                        </a>
+                                        <button class="btn aws-btn-secondary" onclick="showTab('events')">
+                                            <img src="assets/aws-icons/cloudwatch.svg" alt="View Details" class="btn-icon me-2">View Event Details
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="aws-card">
+                                <div class="aws-card-header">
+                                    <h3 class="aws-card-title">Community Impact</h3>
+                                </div>
+                                <div class="aws-card-body">
+                                    <div class="aws-metric">
+                                        <div class="aws-metric-value">150+</div>
+                                        <div class="aws-metric-label">DevOps & AI Professionals</div>
+                                    </div>
+                                    <div class="aws-metric">
+                                        <div class="aws-metric-value">5</div>
+                                        <div class="aws-metric-label">Industry Expert Organizers</div>
+                                    </div>
+                                    <div class="aws-metric">
+                                        <div class="aws-metric-value">12+</div>
+                                        <div class="aws-metric-label">Hands-on Sessions Planned</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mission Statement -->
+                <div class="aws-card mt-4">
+                    <div class="aws-card-header">
+                        <h3 class="aws-card-title">
+                            <img src="assets/aws-icons/wellarchitected.svg" alt="Why We Exist" class="section-icon me-2">Why We Exist
+                        </h3>
+                    </div>
+                    <div class="aws-card-body">
+                        <p class="aws-description">
+                            "Bridging the gap between cutting-edge cloud technology and real-world industry challenges"
+                        </p>
+                        <p>
+                            We're not just another tech meetup. We're a community of practitioners who understand that 
+                            modern infrastructure demands expertise across DevOps automation, AI implementation, 
+                            security-first architecture, and telecom-grade reliability. Whether you're automating 
+                            CI/CD pipelines, deploying machine learning models at scale, securing cloud workloads, 
+                            or building telecom solutions on AWS—you'll find your tribe here.
+                        </p>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <h6 class="text-aws-blue mb-2">What Makes Us Different:</h6>
+                                <ul class="aws-list">
+                                    <li><strong>Real-world focus:</strong> Case studies from actual production environments</li>
+                                    <li><strong>Hands-on learning:</strong> Live demos and interactive workshops</li>
+                                    <li><strong>Industry diversity:</strong> From startups to telecom giants</li>
+                                    <li><strong>Expert-led:</strong> Sessions by practitioners, not just theory</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-aws-blue mb-2">Perfect For:</h6>
+                                <ul class="aws-list">
+                                    <li>DevOps engineers scaling automation</li>
+                                    <li>AI/ML engineers deploying models</li>
+                                    <li>Security professionals hardening cloud infrastructure</li>
+                                    <li>Telecom professionals modernizing with cloud</li>
+                                    <li>Anyone curious about AWS best practices</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events Tab -->
+            <div id="events" class="aws-tab-content">
+                <div class="aws-page-header">
+                    <h1 class="aws-page-title">Events</h1>
+                    <p class="aws-page-subtitle">Real-world sessions for DevOps, AI, Security & Telecom professionals</p>
+                </div>
+
+                <!-- Upcoming Events Section -->
+                <div class="aws-card mb-4">
+                    <div class="aws-card-header">
+                        <h2 class="aws-card-title">
+                            <img src="assets/aws-icons/lambda.svg" alt="Upcoming" class="section-icon me-2">Upcoming Events
+                        </h2>
+                    </div>
+                    <div class="aws-card-body">
+                        <!-- Current Kickoff Event -->
+                        <div class="event-item mb-5">
+                            <div class="event-header d-flex justify-content-between align-items-start mb-3">
+                                <h3 class="event-title">Kickoff Event: AI-Driven Infrastructure & Security at Scale</h3>
+                                <div class="event-actions">
+                                    <a href="https://www.meetup.com/mississauga-linux-meetup-group/" target="_blank" 
+                                       class="btn aws-btn-primary">
+                                        <img src="assets/aws-icons/iam.svg" alt="Register" class="btn-icon me-2">Reserve Your Spot
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Event Overview -->
+                            <div class="event-overview mb-4">
+                                <h4 class="aws-section-title">Why This Event Matters</h4>
+                                <p class="event-description">
+                                    This isn't your typical "intro to cloud" meetup. We're diving deep into the challenges 
+                                    you face every day: How do you deploy AI models securely at telecom scale? What does 
+                                    DevOps look like when you're managing both legacy systems and cutting-edge ML pipelines? 
+                                    How do you maintain security compliance while enabling rapid innovation?
+                                </p>
+                                <div class="event-highlights">
+                                    <h6 class="text-aws-blue mb-2">What You'll Walk Away With:</h6>
+                                    <ul class="aws-list">
+                                        <li><strong>Actionable strategies:</strong> Real frameworks for AI-native organizations</li>
+                                        <li><strong>Architecture patterns:</strong> Battle-tested designs for production AI workloads</li>
+                                        <li><strong>Security insights:</strong> How to secure AI/ML pipelines without slowing innovation</li>
+                                        <li><strong>Telecom perspectives:</strong> Cloud strategies that work for mission-critical systems</li>
+                                        <li><strong>Network connections:</strong> Meet peers facing similar challenges</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col-md-4">
+                                    <div class="aws-info-box">
+                                        <img src="assets/aws-icons/eventbridge.svg" alt="Date" class="aws-info-icon">
+                                        <div class="aws-info-content">
+                                            <label class="aws-label">Date</label>
+                                            <div class="aws-value">July 31, 2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="aws-info-box">
+                                        <img src="assets/aws-icons/cloudwatch.svg" alt="Time" class="aws-info-icon">
+                                        <div class="aws-info-content">
+                                            <label class="aws-label">Time</label>
+                                            <div class="aws-value">4:00 PM – 7:00 PM EST</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="aws-info-box">
+                                        <img src="assets/aws-icons/directconnect.svg" alt="Location" class="aws-info-icon">
+                                        <div class="aws-info-content">
+                                            <label class="aws-label">Location</label>
+                                            <div class="aws-value">Mississauga, ON</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Event Agenda Table -->
+                            <div class="aws-table-container mb-4">
+                                <h4 class="aws-section-title">Detailed Event Agenda</h4>
+                                <table class="aws-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Time</th>
+                                            <th>Session</th>
+                                            <th>Speaker</th>
+                                            <th>Focus</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>4:00 - 4:15 PM</strong></td>
+                                            <td>Welcome & Networking</td>
+                                            <td>Community Team</td>
+                                            <td>Introductions, community overview</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>4:15 - 5:00 PM</strong></td>
+                                            <td>Charting the Way Forward for AI-Native Software Organizations - Leaders Outlook</td>
+                                            <td>Garima Bajpai</td>
+                                            <td>Industry insights, leadership perspectives</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>5:00 - 5:45 PM</strong></td>
+                                            <td>Architecture Best Practices & Design Authority</td>
+                                            <td>Naresh Kumar</td>
+                                            <td>Architecture patterns, design principles</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>5:45 - 6:00 PM</strong></td>
+                                            <td>Partner Sponsor Talk & Q&A</td>
+                                            <td>Pragra Team</td>
+                                            <td>Partnership insights, community Q&A</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>6:00 - 7:00 PM</strong></td>
+                                            <td>Pizza & Networking</td>
+                                            <td>-</td>
+                                            <td>Pizza, soft drinks, refreshments & networking</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Previous Events Section -->
+                <div class="aws-card">
+                    <div class="aws-card-header">
+                        <h2 class="aws-card-title">
+                            <img src="assets/aws-icons/cloudwatch.svg" alt="Previous" class="section-icon me-2">Previous Events
+                        </h2>
+                    </div>
+                    <div class="aws-card-body">
+                        <div class="event-item mb-4">
+                            <div class="event-header d-flex justify-content-between align-items-start mb-3">
+                                <h3 class="event-title">Community Planning Session</h3>
+                                <span class="badge aws-badge-secondary">Completed</span>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3">
+                                    <div class="aws-info-box-small">
+                                        <img src="assets/aws-icons/eventbridge.svg" alt="Date" class="aws-info-icon-small">
+                                        <div class="aws-info-content">
+                                            <label class="aws-label-small">Date</label>
+                                            <div class="aws-value-small">June 15, 2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="aws-info-box-small">
+                                        <img src="assets/aws-icons/cloudwatch.svg" alt="Time" class="aws-info-icon-small">
+                                        <div class="aws-info-content">
+                                            <label class="aws-label-small">Duration</label>
+                                            <div class="aws-value-small">2 hours</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="aws-info-box-small">
+                                        <img src="assets/aws-icons/iam.svg" alt="Attendees" class="aws-info-icon-small">
+                                        <div class="aws-info-content">
+                                            <label class="aws-label-small">Attendees</label>
+                                            <div class="aws-value-small">25 members</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="aws-info-box-small">
+                                        <img src="assets/aws-icons/directconnect.svg" alt="Format" class="aws-info-icon-small">
+                                        <div class="aws-info-content">
+                                            <label class="aws-label-small">Format</label>
+                                            <div class="aws-value-small">Virtual</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="event-description">
+                                Initial community gathering to discuss goals, format preferences, and upcoming event planning. 
+                                Great turnout with valuable feedback from DevOps engineers, security professionals, and telecom experts.
+                            </p>
+                            <div class="event-highlights">
+                                <h6 class="text-aws-blue mb-2">Key Outcomes:</h6>
+                                <ul class="aws-list-small">
+                                    <li>Established monthly meetup schedule</li>
+                                    <li>Identified key topic areas: AI/ML, Security, DevOps, Telecom</li>
+                                    <li>Secured venue partnership with Pragra</li>
+                                    <li>Built initial speaker pipeline</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="event-item">
+                            <div class="event-header d-flex justify-content-between align-items-start mb-3">
+                                <h3 class="event-title">AWS User Group Formation</h3>
+                                <span class="badge aws-badge-secondary">Milestone</span>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3">
+                                    <div class="aws-info-box-small">
+                                        <img src="assets/aws-icons/eventbridge.svg" alt="Date" class="aws-info-icon-small">
+                                        <div class="aws-info-content">
+                                            <label class="aws-label-small">Date</label>
+                                            <div class="aws-value-small">May 2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="aws-info-box-small">
+                                        <img src="assets/aws-icons/organizations.svg" alt="Type" class="aws-info-icon-small">
+                                        <div class="aws-info-content">
+                                            <label class="aws-label-small">Type</label>
+                                            <div class="aws-value-small">Launch</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="aws-info-box-small">
+                                        <img src="assets/aws-icons/directconnect.svg" alt="Location" class="aws-info-icon-small">
+                                        <div class="aws-info-content">
+                                            <label class="aws-label-small">Region</label>
+                                            <div class="aws-value-small">Mississauga</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="aws-info-box-small">
+                                        <img src="assets/aws-icons/iam.svg" alt="Focus" class="aws-info-icon-small">
+                                        <div class="aws-info-content">
+                                            <label class="aws-label-small">Focus</label>
+                                            <div class="aws-value-small">Community</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="event-description">
+                                Official formation of AWS User Group Mississauga, bringing together cloud professionals 
+                                in the Greater Toronto Area. Focus on practical, hands-on learning for DevOps, AI/ML, 
+                                security, and telecom professionals.
+                            </p>
+                            <div class="event-highlights">
+                                <h6 class="text-aws-blue mb-2">Foundation Elements:</h6>
+                                <ul class="aws-list-small">
+                                    <li>Established community guidelines and code of conduct</li>
+                                    <li>Created Meetup group and communication channels</li>
+                                    <li>Defined mission: practical AWS knowledge sharing</li>
+                                    <li>Built partnerships with local tech organizations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Community Tab -->
+            <div id="community" class="aws-tab-content">
+                <div class="aws-page-header">
+                    <h1 class="aws-page-title">Community</h1>
+                    <p class="aws-page-subtitle">Industry practitioners leading by example</p>
+                </div>
+
+                <!-- 1. Partners & Sponsors -->
+                <div class="aws-card mb-4">
+                    <div class="aws-card-header">
+                        <h3 class="aws-card-title">1. Partners & Sponsors</h3>
+                        <p class="aws-card-subtitle">Empowering our community through strategic partnerships</p>
+                    </div>
+                    <div class="aws-card-body">
+                        <p class="mb-4">
+                            Our community thrives through meaningful partnerships with industry leaders who share our vision 
+                            of advancing cloud technology and professional development. These partnerships provide venue space, 
+                            technical expertise, and networking opportunities that make our events possible.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2. Sponsors -->
+                <div class="aws-card mb-4">
+                    <div class="aws-card-header">
+                        <h3 class="aws-card-title">2. Sponsors</h3>
+                        <p class="aws-card-subtitle">Our valued partners making community events possible</p>
+                    </div>
+                    <div class="aws-card-body">
+                        <!-- Featured Space Sponsor -->
+                        <div class="featured-sponsor mb-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 text-center">
+                                    <img src="assets/logos/pragra-logo.svg" alt="Pragra Logo" class="sponsor-logo">
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="sponsor-details">
+                                        <span class="sponsor-badge featured-badge">SPACE SPONSOR</span>
+                                        <h4 class="sponsor-name mb-2">
+                                            <a href="https://www.pragra.io/" target="_blank" class="sponsor-link">
+                                                Pragra - Technology Training Institute
+                                                <img src="assets/aws-icons/organizations.svg" alt="External Link" class="btn-icon ms-1">
+                                            </a>
+                                        </h4>
+                                        <p class="sponsor-description">
+                                            <strong>Pragra</strong> is our premier space sponsor, providing a state-of-the-art venue for our AWS User Group meetups. 
+                                            As a leading technology training institute, Pragra specializes in <strong>DevOps, Cloud Computing, AI/ML, 
+                                            Cybersecurity, and Telecom solutions</strong> - perfectly aligned with our community's focus areas.
+                                        </p>
+                                        <div class="pragra-contributions">
+                                            <h6 class="text-aws-blue mb-2">What Pragra Provides:</h6>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <ul class="aws-list-small">
+                                                        <li><strong>Professional Event Space:</strong> Modern classroom with AV equipment</li>
+                                                        <li><strong>Technical Infrastructure:</strong> High-speed internet and presentation tools</li>
+                                                        <li><strong>Parking & Accessibility:</strong> Convenient location with easy access</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul class="aws-list-small">
+                                                        <li><strong>Expert Mentorship:</strong> Access to experienced instructors</li>
+                                                        <li><strong>Career Support:</strong> Job placement assistance for attendees</li>
+                                                        <li><strong>Training Resources:</strong> Industry-aligned curriculum and materials</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Other Sponsors Table -->
+                        <div class="aws-table-container">
+                            <h5 class="mb-3">Financial Sponsors</h5>
+                            <table class="aws-table">
+                                <thead>
+                                    <tr>
+                                        <th>Contributor</th>
+                                        <th>Contribution Type</th>
+                                        <th>Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="https://www.linkedin.com/in/vkmanik/" target="_blank" class="sponsor-link">
+                                                <strong>Varun Kumar</strong>
+                                                <i class="bi bi-linkedin ms-1"></i>
+                                            </a>
+                                        </td>
+                                        <td>Platform Setup & Management</td>
+                                        <td>Meetup Group Creation, Initial Community Organization & Platform Management</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="https://www.linkedin.com/in/garimabajpai/" target="_blank" class="sponsor-link">
+                                                <strong>Garima Bajpai</strong>
+                                                <i class="bi bi-linkedin ms-1"></i>
+                                            </a>
+                                        </td>
+                                        <td>Platform Sponsorship</td>
+                                        <td>Sponsored Meetup.com subscription for enhanced community features</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="https://www.linkedin.com/in/gpallapa/" target="_blank" class="sponsor-link">
+                                                <strong>Gautham Pallapa</strong>
+                                                <i class="bi bi-linkedin ms-1"></i>
+                                            </a>
+                                        </td>
+                                        <td>Digital Infrastructure</td>
+                                        <td>Sponsored domain name registration for professional online presence</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="sponsor-note mt-4">
+                                <div class="community-initiative">
+                                    <div class="initiative-header">
+                                        <img src="assets/aws-icons/organizations.svg" alt="Community" class="initiative-icon">
+                                        <h6 class="initiative-title">Community-Funded Initiative</h6>
+                                    </div>
+                                    <p class="initiative-description">
+                                        Our user group operates through the generous contributions of community members who believe in knowledge sharing and professional development. Every contribution, whether financial, time, or expertise, helps build a stronger AWS community in the Greater Toronto Area.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Partnership Impact -->
+                <div class="aws-card mb-4">
+                    <div class="aws-card-header">
+                        <h3 class="aws-card-title">3. Partnership Impact</h3>
+                    </div>
+                    <div class="aws-card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 class="text-aws-blue mb-3">What Our Partnerships Enable:</h6>
+                                <ul class="aws-list">
+                                    <li><strong>Professional Venue:</strong> Modern event space with AV equipment</li>
+                                    <li><strong>Expert Access:</strong> Industry practitioners as speakers and mentors</li>
+                                    <li><strong>Learning Resources:</strong> Training materials and hands-on workshops</li>
+                                    <li><strong>Networking Opportunities:</strong> Connect with like-minded professionals</li>
+                                    <li><strong>Career Development:</strong> Job placement assistance and mentorship</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-aws-blue mb-3">Community Growth Metrics:</h6>
+                                <div class="aws-metric mb-3">
+                                    <div class="aws-metric-value">150+</div>
+                                    <div class="aws-metric-label">Active Community Members</div>
+                                </div>
+                                <div class="aws-metric mb-3">
+                                    <div class="aws-metric-value">12+</div>
+                                    <div class="aws-metric-label">Planned Sessions This Year</div>
+                                </div>
+                                <div class="aws-metric">
+                                    <div class="aws-metric-value">5</div>
+                                    <div class="aws-metric-label">Industry Expert Organizers</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. What We're Building Together -->
+                <div class="aws-card mb-4">
+                    <div class="aws-card-header">
+                        <h3 class="aws-card-title">4. What We're Building Together</h3>
+                    </div>
+                    <div class="aws-card-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="building-item">
+                                    <img src="assets/aws-icons/sagemaker.svg" alt="Knowledge Hub" class="building-icon">
+                                    <h6 class="building-title">Knowledge Hub</h6>
+                                    <p class="building-description">
+                                        Comprehensive resource library with session recordings, code samples, 
+                                        and architecture patterns from our community events.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="building-item">
+                                    <img src="assets/aws-icons/iam.svg" alt="Professional Network" class="building-icon">
+                                    <h6 class="building-title">Professional Network</h6>
+                                    <p class="building-description">
+                                        Strong connections between DevOps engineers, AI specialists, security professionals, 
+                                        and telecom experts across the GTA.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="building-item">
+                                    <img src="assets/aws-icons/lambda.svg" alt="Innovation Platform" class="building-icon">
+                                    <h6 class="building-title">Innovation Platform</h6>
+                                    <p class="building-description">
+                                        Collaborative environment for sharing cutting-edge solutions, 
+                                        best practices, and emerging technologies in cloud computing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Meet Your Organizers -->
+                <div class="aws-card">
+                    <div class="aws-card-header">
+                        <h3 class="aws-card-title">Meet Your Organizers</h3>
+                        <p class="aws-card-subtitle">Industry professionals driving community growth</p>
+                    </div>
+                    <div class="aws-card-body">
+                        <div class="aws-table-container">
+                            <table class="aws-table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Role</th>
+                                        <th>LinkedIn</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Varun Kumar Manik</strong></td>
+                                        <td>AWS Community Builder & AWS Ambassador</td>
+                                        <td>
+                                            <a href="https://www.linkedin.com/in/vkmanik/" target="_blank" class="linkedin-link">
+                                                <i class="bi bi-linkedin"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Naresh Kumar</strong></td>
+                                        <td>Solution Architect & Community Builder</td>
+                                        <td>
+                                            <a href="https://www.linkedin.com/in/nksprofile/" target="_blank" class="linkedin-link">
+                                                <i class="bi bi-linkedin"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Garima Bajpai</strong></td>
+                                        <td>AWS Community Leader & Agile Coach</td>
+                                        <td>
+                                            <a href="https://www.linkedin.com/in/garimabajpai/" target="_blank" class="linkedin-link">
+                                                <i class="bi bi-linkedin"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Atin Singh</strong></td>
+                                        <td>Hiring Mentors & Software Developers</td>
+                                        <td>
+                                            <a href="https://www.linkedin.com/in/atin-singh-176b2b15a/" target="_blank" class="linkedin-link">
+                                                <i class="bi bi-linkedin"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Vivek Ghartan</strong></td>
+                                        <td>AI Technocrat & Community Builder</td>
+                                        <td>
+                                            <a href="https://www.linkedin.com/in/vivekghartan/" target="_blank" class="linkedin-link">
+                                                <i class="bi bi-linkedin"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Gautham Pallapa</strong></td>
+                                        <td>Technology Executive & Community Builder</td>
+                                        <td>
+                                            <a href="https://www.linkedin.com/in/gpallapa/" target="_blank" class="linkedin-link">
+                                                <i class="bi bi-linkedin"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Resources Tab -->
+            <div id="resources" class="aws-tab-content">
+                <div class="aws-page-header">
+                    <h1 class="aws-page-title">Resources</h1>
+                    <p class="aws-page-subtitle">Practical tools and knowledge for DevOps, AI, Security & Telecom professionals</p>
+                </div>
+
+                <div class="aws-card">
+                    <div class="aws-card-header">
+                        <h3 class="aws-card-title">What You'll Learn With Us</h3>
+                    </div>
+                    <div class="aws-card-body">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="aws-resource-card">
+                                    <div class="aws-resource-icon">
+                                        <img src="assets/aws-icons/codepipeline.svg" alt="DevOps" class="resource-icon">
+                                    </div>
+                                    <h5>DevOps at Scale</h5>
+                                    <p>CI/CD pipelines that handle hundreds of deployments per day. Infrastructure as Code patterns that actually work in production. Monitoring and observability strategies for complex systems.</p>
+                                    <div class="resource-tags">
+                                        <span class="resource-tag">Terraform</span>
+                                        <span class="resource-tag">GitLab CI</span>
+                                        <span class="resource-tag">CloudWatch</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="aws-resource-card">
+                                    <div class="aws-resource-icon">
+                                        <img src="assets/aws-icons/sagemaker.svg" alt="AI Systems" class="resource-icon">
+                                    </div>
+                                    <h5>Production AI Systems</h5>
+                                    <p>MLOps pipelines that deploy models safely. Cost optimization for large-scale inference. Monitoring ML model performance and data drift in production environments.</p>
+                                    <div class="resource-tags">
+                                        <span class="resource-tag">SageMaker</span>
+                                        <span class="resource-tag">MLflow</span>
+                                        <span class="resource-tag">Bedrock</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="aws-resource-card">
+                                    <div class="aws-resource-icon">
+                                        <img src="assets/aws-icons/guardduty.svg" alt="Security" class="resource-icon">
+                                    </div>
+                                    <h5>Cloud Security</h5>
+                                    <p>Security architectures for highly regulated industries. Compliance automation and audit trails. Incident response procedures for cloud environments.</p>
+                                    <div class="resource-tags">
+                                        <span class="resource-tag">IAM</span>
+                                        <span class="resource-tag">GuardDuty</span>
+                                        <span class="resource-tag">Config</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="aws-resource-card">
+                                    <div class="aws-resource-icon">
+                                        <img src="assets/aws-icons/wavelength.svg" alt="Telecom" class="resource-icon">
+                                    </div>
+                                    <h5>Telecom Modernization</h5>
+                                    <p>Cloud migration strategies for mission-critical telecom systems. Network function virtualization on AWS. Scaling telecom workloads with cloud-native patterns.</p>
+                                    <div class="resource-tags">
+                                        <span class="resource-tag">Wavelength</span>
+                                        <span class="resource-tag">Direct Connect</span>
+                                        <span class="resource-tag">EKS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="aws-card mt-4">
+                    <div class="aws-card-header">
+                        <h3 class="aws-card-title">How We Learn Together</h3>
+                    </div>
+                    <div class="aws-card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="aws-feature-box">
+                                    <img src="assets/aws-icons/wellarchitected.svg" alt="Architecture Reviews" class="aws-feature-icon">
+                                    <h6>Architecture Reviews</h6>
+                                    <p>Bring your real challenges. Get feedback from experienced practitioners.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="aws-feature-box">
+                                    <img src="assets/aws-icons/lambda.svg" alt="Live Coding" class="aws-feature-icon">
+                                    <h6>Live Coding Sessions</h6>
+                                    <p>Watch experts build and deploy real solutions, not just slides.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="aws-feature-box">
+                                    <img src="assets/aws-icons/organizations.svg" alt="Peer Learning" class="aws-feature-icon">
+                                    <h6>Peer Learning</h6>
+                                    <p>Connect with professionals facing similar challenges in your industry.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="aws-feature-box">
+                                    <img src="assets/aws-icons/systemsmanager.svg" alt="Career Growth" class="aws-feature-icon">
+                                    <h6>Career Growth</h6>
+                                    <p>Meet hiring managers, learn about opportunities, grow your network.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="aws-card mt-4">
+                    <div class="aws-card-header">
+                        <h3 class="aws-card-title">Upcoming Learning Tracks</h3>
+                    </div>
+                    <div class="aws-card-body">
+                        <div class="learning-tracks">
+                            <div class="track-item">
+                                <h6 class="text-aws-blue">DevOps Automation Series</h6>
+                                <p>From basic CI/CD to advanced GitOps patterns. Real-world case studies from companies scaling their deployment processes.</p>
+                            </div>
+                            <div class="track-item">
+                                <h6 class="text-aws-blue">AI in Production Workshop</h6>
+                                <p>Build, deploy, and monitor ML models at scale. Hands-on sessions with actual production architectures.</p>
+                            </div>
+                            <div class="track-item">
+                                <h6 class="text-aws-blue">Security-First Architecture</h6>
+                                <p>Design secure systems from the ground up. Compliance automation and threat modeling workshops.</p>
+                            </div>
+                            <div class="track-item">
+                                <h6 class="text-aws-blue">Telecom Cloud Migration</h6>
+                                <p>Strategies for moving mission-critical telecom workloads to the cloud without service disruption.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Tab -->
+            <div id="contact" class="aws-tab-content">
+                <div class="aws-page-header">
+                    <h1 class="aws-page-title">Get In Touch</h1>
+                    <p class="aws-page-subtitle">Questions, ideas, or want to share your expertise? We'd love to hear from you.</p>
+                </div>
+
+                <div class="row">
+                    <!-- Contact Form Section -->
+                    <div class="col-lg-7 mb-4">
+                        <div class="aws-card h-100">
+                            <div class="aws-card-header">
+                                <h3 class="aws-card-title">
+                                    <img src="assets/aws-icons/ses.svg" alt="Contact" class="section-icon me-2">
+                                    Contact Form
+                                </h3>
+                                <p class="aws-card-subtitle">Fill out our form and we'll get back to you soon</p>
+                            </div>
+                            <div class="aws-card-body">
+                                <div class="contact-form-section">
+                                    <div class="form-cta text-center mb-4">
+                                        <div class="form-icon-wrapper mb-3">
+                                            <img src="assets/aws-icons/organizations.svg" alt="Form" class="form-main-icon">
+                                        </div>
+                                        <h5 class="form-cta-title">AWS User Group Contact Form</h5>
+                                        <p class="form-cta-description">
+                                            Use our dedicated form to reach out to the community organizers
+                                        </p>
+                                        <a href="https://docs.google.com/forms/d/1HeGJ2ihV-98Id1m0r4dU7vUdTEmWnGKyHUguv1TAmAc/viewform" 
+                                           target="_blank" 
+                                           class="btn aws-btn-primary btn-lg contact-form-btn">
+                                            <img src="assets/aws-icons/lambda.svg" alt="Open Form" class="btn-icon me-2">
+                                            Open Contact Form
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="form-options">
+                                        <h6 class="options-title">What you can do:</h6>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="option-item">
+                                                    <img src="assets/aws-icons/eventbridge.svg" alt="Events" class="option-icon">
+                                                    <div class="option-content">
+                                                        <strong>Event Inquiries</strong>
+                                                        <p>Ask about upcoming meetups and sessions</p>
+                                                    </div>
+                                                </div>
+                                                <div class="option-item">
+                                                    <img src="assets/aws-icons/lambda.svg" alt="Speaking" class="option-icon">
+                                                    <div class="option-content">
+                                                        <strong>Speaking Proposals</strong>
+                                                        <p>Share your expertise with the community</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="option-item">
+                                                    <img src="assets/aws-icons/systemsmanager.svg" alt="Partnership" class="option-icon">
+                                                    <div class="option-content">
+                                                        <strong>Partnership Opportunities</strong>
+                                                        <p>Explore collaboration possibilities</p>
+                                                    </div>
+                                                </div>
+                                                <div class="option-item">
+                                                    <img src="assets/aws-icons/cloudwatch.svg" alt="Feedback" class="option-icon">
+                                                    <div class="option-content">
+                                                        <strong>Feedback & Suggestions</strong>
+                                                        <p>Help us improve our events</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Information & Quick Actions -->
+                    <div class="col-lg-5">
+                        <!-- Contact Information -->
+                        <div class="aws-card mb-4">
+                            <div class="aws-card-header">
+                                <h3 class="aws-card-title">
+                                    <img src="assets/aws-icons/directconnect.svg" alt="Info" class="section-icon me-2">
+                                    Contact Information
+                                </h3>
+                            </div>
+                            <div class="aws-card-body">
+                                <div class="contact-info-grid">
+                                    <div class="contact-info-item">
+                                        <div class="contact-info-icon">
+                                            <img src="assets/aws-icons/ses.svg" alt="Email" class="info-icon">
+                                        </div>
+                                        <div class="contact-info-content">
+                                            <label class="info-label">Email</label>
+                                            <div class="info-value">
+                                                <a href="mailto:awsusergroup.mississauga@gmail.com" class="contact-link">
+                                                    awsusergroup.mississauga@gmail.com
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-info-item">
+                                        <div class="contact-info-icon">
+                                            <img src="assets/aws-icons/organizations.svg" alt="Community" class="info-icon">
+                                        </div>
+                                        <div class="contact-info-content">
+                                            <label class="info-label">Meetup Group</label>
+                                            <div class="info-value">
+                                                <a href="https://www.meetup.com/mississauga-linux-meetup-group/" target="_blank" class="contact-link">
+                                                    Join our Meetup Community
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-info-item">
+                                        <div class="contact-info-icon">
+                                            <img src="assets/aws-icons/directconnect.svg" alt="Location" class="info-icon">
+                                        </div>
+                                        <div class="contact-info-content">
+                                            <label class="info-label">Event Location</label>
+                                            <div class="info-value">
+                                                Suite 160, 110 Mathson Blvd W<br>
+                                                Mississauga, ON L5R 4G7<br>
+                                                <small class="location-note">Hosted at Pragra</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Actions -->
+                        <div class="aws-card">
+                            <div class="aws-card-header">
+                                <h3 class="aws-card-title">
+                                    <img src="assets/aws-icons/lambda.svg" alt="Actions" class="section-icon me-2">
+                                    Quick Actions
+                                </h3>
+                            </div>
+                            <div class="aws-card-body">
+                                <div class="quick-actions-grid">
+                                    <a href="https://www.meetup.com/mississauga-linux-meetup-group/" target="_blank" 
+                                       class="quick-action-btn">
+                                        <img src="assets/aws-icons/eventbridge.svg" alt="Join Event" class="action-icon">
+                                        <div class="action-content">
+                                            <strong>Join Next Event</strong>
+                                            <small>Register for upcoming meetup</small>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="mailto:awsusergroup.mississauga@gmail.com?subject=Speaking Opportunity" 
+                                       class="quick-action-btn">
+                                        <img src="assets/aws-icons/lambda.svg" alt="Propose Talk" class="action-icon">
+                                        <div class="action-content">
+                                            <strong>Propose a Talk</strong>
+                                            <small>Share your expertise</small>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="mailto:awsusergroup.mississauga@gmail.com?subject=Partnership Inquiry" 
+                                       class="quick-action-btn">
+                                        <img src="assets/aws-icons/systemsmanager.svg" alt="Partnership" class="action-icon">
+                                        <div class="action-content">
+                                            <strong>Partnership</strong>
+                                            <small>Explore collaboration</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- AWS Console Footer -->
+    <footer class="aws-footer">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="footer-content text-center">
+                        <p class="aws-footer-text mb-0">
+                            © <span style="color: var(--aws-orange);">2025</span> AWS User Group Mississauga. Built for the <span style="color: var(--aws-orange);">AWS community</span>. | 
+                            Developed and Designed by 
+                            <a href="https://www.linkedin.com/in/vkmanik/" target="_blank" class="footer-link">
+                                <strong>Varun Kumar Manik</strong>
+                                <i class="bi bi-linkedin ms-1"></i>
+                            </a> | 
+                            Event Space Partner: 
+                            <a href="https://www.pragra.io/" target="_blank" class="footer-link">
+                                <strong>Pragra</strong>
+                                <img src="assets/aws-icons/organizations.svg" alt="External Link" class="btn-icon ms-1">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom AWS Console JS -->
+    <script src="js/aws-console.js"></script>
+</body>
+</html>
