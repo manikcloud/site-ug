@@ -155,8 +155,7 @@ git push origin main
 ### 🎤 **Organizers:**
 - **[Varun Kumar Manik](https://www.linkedin.com/in/vkmanik/)** - Founder & Lead Organizer
 - **[Naresh Kumar](https://linkedin.com/in/naresh-kumar)** - Co-Organizer
-- **[Vinod G](https://linkedin.com/in/vinod-g)** - Technical Lead
-- **[Jay Shah](https://linkedin.com/in/jay-shah)** - Event Coordinator
+
 
 ### 🏢 **Event Space Partner:**
 **[Pragra](https://www.pragra.io/)** - Providing amazing venue space for our community events
