@@ -6,6 +6,9 @@
 
 **🚀 Live Website:** [meetupscloud.org](https://meetupscloud.org)
 
+<img width="1441" height="1081" alt="image" src="https://github.com/user-attachments/assets/de66ed8e-fa52-4c40-861f-741609d87700" />
+
+
 ## 🌟 About Our Community
 
 Welcome to the **AWS User Group Mississauga** - a vibrant, community-driven platform dedicated to cloud enthusiasts, developers, DevOps engineers, and IT professionals in the Greater Toronto Area and beyond!
