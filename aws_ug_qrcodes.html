@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS User Group Mississauga - QR Codes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #232F3E 0%, #1a252f 100%);
+            min-height: 100vh;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px 0;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            color: #FF9900;
+            font-weight: 400;
+        }
+
+        .header .description {
+            font-size: 1rem;
+            color: #cccccc;
+            margin-top: 15px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .qr-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .qr-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 153, 0, 0.2);
+        }
+
+        .qr-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .qr-code-container {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 25px;
+            border: 3px solid #232F3E;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8f9fa;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .qr-placeholder {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .qr-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #232F3E;
+            margin-bottom: 10px;
+        }
+
+        .qr-description {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .qr-action {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #FF9900;
+            margin-bottom: 5px;
+        }
+
+        .qr-label {
+            font-size: 0.9rem;
+            color: #87CEEB;
+            font-weight: 500;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 15px;
+            opacity: 0.8;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 50px;
+        }
+
+        .footer h3 {
+            color: #FF9900;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
+        .footer p {
+            color: #cccccc;
+            font-size: 1rem;
+            line-height: 1.6;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .instructions {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 40px 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .instructions h3 {
+            color: #FF9900;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .instructions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .instruction-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .instruction-item h4 {
+            color: #ffffff;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .instruction-item ol {
+            color: #cccccc;
+            padding-left: 20px;
+        }
+
+        .instruction-item li {
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .qr-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .qr-card {
+                padding: 30px 20px;
+            }
+            
+            .qr-code-container {
+                width: 180px;
+                height: 180px;
+            }
+        }
+
+        /* Subtle animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .qr-card {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .qr-card:nth-child(1) { animation-delay: 0.1s; }
+        .qr-card:nth-child(2) { animation-delay: 0.2s; }
+        .qr-card:nth-child(3) { animation-delay: 0.3s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>AWS User Group Mississauga</h1>
+            <div class="subtitle">Quick Access QR Codes</div>
+            <div class="description">
+                Scan these QR codes with your phone camera for instant access to our community resources and events. 
+                Simply point your camera at any QR code below and tap the notification that appears.
+            </div>
+        </div>
+
+        <!-- QR Codes Grid -->
+        <div class="qr-grid">
+            <!-- Meetup QR Code -->
+            <div class="qr-card">
+                <div class="qr-code-container">
+                    <div class="qr-placeholder">
+                        📱<br>
+                        MEETUP QR<br>
+                        <small>Scan with camera</small>
+                    </div>
+                </div>
+                <div class="qr-title">Join Our Meetup</div>
+                <div class="qr-description">
+                    Connect with our AWS community and get notified about upcoming events, workshops, and networking opportunities.
+                </div>
+                <div class="qr-action">Scan to RSVP</div>
+                <div class="qr-label">Meetup Events</div>
+            </div>
+
+            <!-- LinkedIn Community QR Code -->
+            <div class="qr-card">
+                <div class="qr-code-container">
+                    <div class="qr-placeholder">
+                        💼<br>
+                        LINKEDIN QR<br>
+                        <small>Follow us</small>
+                    </div>
+                </div>
+                <div class="qr-title">LinkedIn Community</div>
+                <div class="qr-description">
+                    Follow our LinkedIn page for professional updates, industry insights, job opportunities, and community highlights.
+                </div>
+                <div class="qr-action">Scan to Follow</div>
+                <div class="qr-label">LinkedIn Community</div>
+            </div>
+
+            <!-- Varun Manik LinkedIn QR Code -->
+            <div class="qr-card">
+                <div class="qr-code-container">
+                    <div class="qr-placeholder">
+                        👤<br>
+                        VARUN QR<br>
+                        <small>Connect</small>
+                    </div>
+                </div>
+                <div class="qr-title">Connect with Varun</div>
+                <div class="qr-description">
+                    Connect directly with Varun Kumar Manik, our community organizer and AWS expert, for mentorship and collaboration.
+                </div>
+                <div class="qr-action">Scan to Connect</div>
+                <div class="qr-label">Varun Manik</div>
+            </div>
+        </div>
+
+        <!-- Instructions Section -->
+        <div class="instructions">
+            <h3>📱 How to Scan QR Codes</h3>
+            <div class="instructions-grid">
+                <div class="instruction-item">
+                    <h4>📱 iPhone Users</h4>
+                    <ol>
+                        <li>Open the Camera app</li>
+                        <li>Point your camera at the QR code</li>
+                        <li>Tap the notification that appears at the top</li>
+                        <li>Follow the link to connect!</li>
+                    </ol>
+                </div>
+                <div class="instruction-item">
+                    <h4>🤖 Android Users</h4>
+                    <ol>
+                        <li>Open Camera app or Google Lens</li>
+                        <li>Point your camera at the QR code</li>
+                        <li>Tap the link that appears on screen</li>
+                        <li>Join our community!</li>
+                    </ol>
+                </div>
+                <div class="instruction-item">
+                    <h4>🔧 Alternative Method</h4>
+                    <ol>
+                        <li>Download any QR scanner app</li>
+                        <li>Open the app and scan the code</li>
+                        <li>Follow the generated link</li>
+                        <li>Connect with us instantly!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <h3>🚀 Join Our AWS Journey</h3>
+            <p>
+                AWS User Group Mississauga is building the future of cloud technology together. 
+                Whether you're a beginner or an expert, there's a place for you in our community.
+                <br><br>
+                <strong>Next Event:</strong> July 31st, 2025 | 4:00-7:00 PM EST<br>
+                <strong>Location:</strong> Pragra, Mississauga
+            </p>
+        </div>
+    </div>
+</body>
+</html>
