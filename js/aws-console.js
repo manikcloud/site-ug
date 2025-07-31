@@ -177,3 +177,134 @@ function highlightKeynoteSession() {
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(highlightKeynoteSession, 1000);
 });
+
+// Hyperlint AI Slides Functions
+function showHyperlintSlides() {
+    // Hide all tab contents
+    const tabContents = document.querySelectorAll('.aws-tab-content');
+    tabContents.forEach(content => {
+        content.classList.remove('active');
+        content.style.display = 'none';
+    });
+    
+    // Remove active class from all nav links
+    const navLinks = document.querySelectorAll('.aws-nav-link');
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+    
+    // Show hyperlint slides tab
+    const slidesTab = document.getElementById('hyperlint-slides');
+    if (slidesTab) {
+        slidesTab.classList.add('active');
+        slidesTab.style.display = 'block';
+    }
+    
+    // Show notification
+    showNotification('Loading AI Event Slides from July 31st meetup...', 'info');
+}
+
+function downloadSlides() {
+    // Create a simple HTML file with the slides content
+    const slidesContent = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UG AI Event Slides - July 31st</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .slide { background: white; padding: 30px; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .slide h1 { color: #232F3E; border-bottom: 3px solid #FF9900; padding-bottom: 10px; }
+        .slide h2 { color: #FF9900; }
+        .highlight { background: #FFF3CD; padding: 10px; border-left: 4px solid #FF9900; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <h1>🚀 Hyperlint AI Tools & Resources</h1>
+        <h2>AWS User Group Mississauga - July 31st Event</h2>
+        <p>Welcome to our AI-focused meetup exploring cutting-edge development tools and intelligent infrastructure management.</p>
+    </div>
+    
+    <div class="slide">
+        <h1>🤖 What is Hyperlint?</h1>
+        <div class="highlight">
+            <strong>Hyperlint</strong> represents the next generation of AI-powered development tools that enhance code quality, 
+            security, and performance through intelligent analysis and automated optimization.
+        </div>
+        <ul>
+            <li>Advanced static code analysis with ML-powered insights</li>
+            <li>Real-time security vulnerability detection</li>
+            <li>Performance optimization recommendations</li>
+            <li>Infrastructure-as-Code best practices enforcement</li>
+        </ul>
+    </div>
+    
+    <div class="slide">
+        <h1>🏗️ AI-Driven Infrastructure</h1>
+        <h2>Key Benefits:</h2>
+        <ul>
+            <li><strong>Intelligent Scaling:</strong> ML-powered auto-scaling based on usage patterns</li>
+            <li><strong>Predictive Maintenance:</strong> Proactive issue detection and resolution</li>
+            <li><strong>Cost Optimization:</strong> AI-driven resource allocation and cost management</li>
+            <li><strong>Security Enhancement:</strong> Automated threat detection and response</li>
+        </ul>
+    </div>
+    
+    <div class="slide">
+        <h1>🔧 Implementation Strategies</h1>
+        <div class="highlight">
+            <strong>Best Practices for AI Integration:</strong>
+        </div>
+        <ol>
+            <li>Start with pilot projects to validate AI tools</li>
+            <li>Integrate gradually into existing CI/CD pipelines</li>
+            <li>Train teams on AI-assisted development workflows</li>
+            <li>Monitor and measure AI tool effectiveness</li>
+            <li>Scale successful implementations across organization</li>
+        </ol>
+    </div>
+    
+    <div class="slide">
+        <h1>📊 Real-World Results</h1>
+        <h2>Organizations using AI-powered development tools report:</h2>
+        <ul>
+            <li>40% reduction in code review time</li>
+            <li>60% fewer security vulnerabilities in production</li>
+            <li>25% improvement in application performance</li>
+            <li>50% faster incident resolution</li>
+        </ul>
+    </div>
+    
+    <div class="slide">
+        <h1>🚀 Next Steps</h1>
+        <h2>Getting Started with Hyperlint AI:</h2>
+        <ol>
+            <li>Explore the GitHub repository: <a href="https://github.com/manikcloud/hyperlint-ai">github.com/manikcloud/hyperlint-ai</a></li>
+            <li>Join our community discussions</li>
+            <li>Attend hands-on workshops</li>
+            <li>Contribute to open-source AI tools</li>
+        </ol>
+        <div class="highlight">
+            <strong>Thank you for attending AWS User Group Mississauga!</strong><br>
+            Questions? Contact us at awsusergroup.mississauga@gmail.com
+        </div>
+    </div>
+</body>
+</html>`;
+    
+    // Create and download the file
+    const blob = new Blob([slidesContent], { type: 'text/html' });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'UG_ai_event_slides.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+    
+    showNotification('AI Event Slides downloaded successfully!', 'success');
+}
