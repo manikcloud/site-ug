@@ -19,6 +19,8 @@ To foster learning, networking, and knowledge sharing in the AWS cloud ecosystem
 - **Networking Events** - Connect with like-minded cloud professionals
 - **Knowledge Sharing** - Real-world experiences and best practices
 - **Community Building** - Supporting each other's cloud journey
+  
+![firstevent-july31-2025](https://github.com/user-attachments/assets/a8fb197c-8b56-46fa-ab38-7e42d8019422)
 
 ## 📅 Join Our Meetups
 
